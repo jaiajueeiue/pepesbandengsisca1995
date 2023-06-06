@@ -3,14 +3,6 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
-body {
-  background-image: url("yoyoyo.jpeg"); /* Ganti dengan URL atau path ke gambar background */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin: 30px; 
-  padding: 10px; 
-}
 
 .logo-container {
   display: flex;
@@ -23,7 +15,6 @@ body {
   margin: 30px;
   margin-right: 45px; /* Sesuaikan jarak antara logo dan teks */
   color: rgb(251, 240, 240); /* Ganti dengan warna yang diinginkan, misalnya "red", "#00FF00", atau "rgb(0, 255, 0)" */
-
 }
 
 .logo-text {
@@ -33,26 +24,27 @@ body {
 
 .container {
   max-width: 280px;
-  margin: 220px;X ;
+  margin: 50px auto;
   padding: 20px;
 }
 
 h1, h2 {
   color: rgba(54, 45, 45, 0.685); /* Ganti dengan warna yang diinginkan, misalnya "red", "#00FF00", atau "rgb(0, 255, 0)" */
-  margin: 30px; /* Jarak luar (margin) sebesar 10 piksel di semua sisi */
+  margin: 30px; /* Jarak luar (margin) sebesar 30 piksel di semua sisi */
   padding: 10px; /* Jarak dalam (padding) sebesar 10 piksel di semua sisi */
 }
 
-p{color: #ffffff;
-  margin: -30px; /* Jarak luar (margin) sebesar 10 piksel di semua sisi */
-  padding: -10px; /
+p {
+  color: #ffffff;
+  margin: -30px; /* Jarak luar (margin) sebesar -30 piksel di semua sisi */
+  padding: -10px; /* Jarak dalam (padding) sebesar -10 piksel di semua sisi */
 }
 
 /* Gaya navigasi */
 header {
-  background-color:none
+  background-color: none;
   padding: 10px;
-  margin: 30px; /* Jarak luar (margin) sebesar 10 piksel di semua sisi */
+  margin: 30px; /* Jarak luar (margin) sebesar 30 piksel di semua sisi */
   padding: 10px; /* Jarak dalam (padding) sebesar 10 piksel di semua sisi */
 }
 
@@ -102,9 +94,6 @@ nav ul li a {
 .prev,
 .next {
   position: absolute;
-  top :auto
-  bottom :3000px
-  transform: translateY(-50%);
   padding: 10px;
   background-color: #000000;
   color: #ffffff;
@@ -122,3 +111,47 @@ nav ul li a {
   right: 10px;
   bottom: 50px;
 }
+
+/* Responsif */
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 50%;
+    margin: 20px;
+    margin-right: 25px;
+  }
+  
+  .logo-text {
+    font-size: 40px;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  h1, h2 {
+    margin: 20px;
+    padding: 5px;
+  }
+  
+  p {
+    margin: -20px;
+    padding: -5px;
+  }
+  
+  header {
+    margin: 20px;
+    padding: 5px;
+  }
+  
+  nav ul li {
+    margin-right: 5px;
+  }
+  
+  .slide-caption {
+    bottom: 30px;
+    left: 30px;
+  }
+}
+
