@@ -10,42 +10,38 @@ body {
 }
 
 .logo {
-  width: 30%; /* Sesuaikan ukuran logo */
+  width: 100%; /* Adjust the logo width for responsiveness */
   height: auto;
-  margin: 30px;
-  margin-right: 45px; /* Sesuaikan jarak antara logo dan teks */
-  color: rgb(251, 240, 240); /* Ganti dengan warna yang diinginkan, misalnya "red", "#00FF00", atau "rgb(0, 255, 0)" */
+  margin: 20px;
+  text-align: center; /* Center the logo */
+  color: rgb(251, 240, 240);
 }
 
 .logo-text {
-  font-size: 70px; /* Sesuaikan ukuran teks */
-  color: rgba(229, 95, 95, 0.995); /* Ganti dengan warna yang diinginkan, misalnya "red", "#00FF00", atau "rgb(0, 255, 0)" */
+  font-size: 40px; /* Adjust the logo text size for responsiveness */
+  color: rgba(229, 95, 95, 0.995);
 }
 
 .container {
-  max-width: 280px;
-  margin: 50px auto;
-  padding: 20px;
+  max-width: 100%;
+  margin: 20px;
+  padding: 10px;
 }
 
 h1, h2 {
-  color: rgba(54, 45, 45, 0.685); /* Ganti dengan warna yang diinginkan, misalnya "red", "#00FF00", atau "rgb(0, 255, 0)" */
-  margin: 30px; /* Jarak luar (margin) sebesar 30 piksel di semua sisi */
-  padding: 10px; /* Jarak dalam (padding) sebesar 10 piksel di semua sisi */
+  margin: 20px;
+  padding: 5px;
 }
 
 p {
-  color: #ffffff;
-  margin: -30px; /* Jarak luar (margin) sebesar -30 piksel di semua sisi */
-  padding: -10px; /* Jarak dalam (padding) sebesar -10 piksel di semua sisi */
+  margin: -20px;
+  padding: -5px;
 }
 
-/* Gaya navigasi */
+/* Navigation Styles */
 header {
-  background-color: none;
-  padding: 10px;
-  margin: 30px; /* Jarak luar (margin) sebesar 30 piksel di semua sisi */
-  padding: 10px; /* Jarak dalam (padding) sebesar 10 piksel di semua sisi */
+  margin: 20px;
+  padding: 5px;
 }
 
 nav ul {
@@ -66,7 +62,7 @@ nav ul li a {
   padding: 5px 10px;
 }
 
-/* Gaya slide gambar */
+/* Slideshow Styles */
 .slideshow-container {
   position: relative;
   overflow: hidden;
@@ -75,22 +71,21 @@ nav ul li a {
 
 .slide {
   display: none;
-  fill: ;
 }
 
 .slide img {
   width: 100%;
-  height: 100%;
+  height: auto; /* Adjust the image height for responsiveness */
 }
 
 .slide-caption {
   position: absolute;
-  bottom: 50px;
-  left: 50px;
+  bottom: 30px;
+  left: 30px;
   color: #ffffff;
 }
 
-/* Gaya tombol navigasi */
+/* Navigation Button Styles */
 .prev,
 .next {
   position: absolute;
@@ -112,36 +107,33 @@ nav ul li a {
   bottom: 50px;
 }
 
-/* Responsif */
-@media screen and (max-width: 600px) {
+/* Responsive Styles for Phone */
+@media screen and (max-width: 480px) {
   .logo {
-    width: 50%;
-    margin: 20px;
-    margin-right: 25px;
+    margin: 10px;
   }
   
   .logo-text {
-    font-size: 40px;
+    font-size: 24px;
   }
   
   .container {
-    max-width: 100%;
-    margin: 20px;
-    padding: 10px;
+    margin: 10px;
+    padding: 5px;
   }
   
   h1, h2 {
-    margin: 20px;
+    margin: 10px;
     padding: 5px;
   }
   
   p {
-    margin: -20px;
+    margin: -10px;
     padding: -5px;
   }
   
   header {
-    margin: 20px;
+    margin: 10px;
     padding: 5px;
   }
   
@@ -150,8 +142,9 @@ nav ul li a {
   }
   
   .slide-caption {
-    bottom: 30px;
-    left: 30px;
+    bottom: 20px;
+    left: 20px;
   }
 }
+
 
