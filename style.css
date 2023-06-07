@@ -10,38 +10,42 @@ body {
 }
 
 .logo {
-  width: 100%; /* Adjust the logo width for responsiveness */
+  width: 30%;
   height: auto;
-  margin: 20px;
-  text-align: center; /* Center the logo */
+  margin: 30px;
+  margin-right: 45px;
   color: rgb(251, 240, 240);
 }
 
 .logo-text {
-  font-size: 40px; /* Adjust the logo text size for responsiveness */
+  font-size: 70px;
   color: rgba(229, 95, 95, 0.995);
 }
 
 .container {
-  max-width: 100%;
-  margin: 20px;
-  padding: 10px;
+  max-width: 280px;
+  margin: 220px;
+  padding: 20px;
 }
 
 h1, h2 {
-  margin: 20px;
-  padding: 5px;
+  color: rgba(54, 45, 45, 0.685);
+  margin: 30px;
+  padding: 10px;
 }
 
 p {
-  margin: -20px;
-  padding: -5px;
+  color: #ffffff;
+  margin: -30px;
+  padding: -10px;
 }
 
-/* Navigation Styles */
+/* Gaya navigasi */
 header {
-  margin: 20px;
-  padding: 5px;
+  background-color: none;
+  padding: 10px;
+  margin: 30px;
+  padding: 10px;
 }
 
 nav ul {
@@ -62,7 +66,7 @@ nav ul li a {
   padding: 5px 10px;
 }
 
-/* Slideshow Styles */
+/* Gaya slide gambar */
 .slideshow-container {
   position: relative;
   overflow: hidden;
@@ -71,21 +75,22 @@ nav ul li a {
 
 .slide {
   display: none;
+  fill: ;
 }
 
 .slide img {
   width: 100%;
-  height: auto; /* Adjust the image height for responsiveness */
+  height: 100%;
 }
 
 .slide-caption {
   position: absolute;
-  bottom: 30px;
-  left: 30px;
+  bottom: 50px;
+  left: 50px;
   color: #ffffff;
 }
 
-/* Navigation Button Styles */
+/* Gaya tombol navigasi */
 .prev,
 .next {
   position: absolute;
@@ -105,6 +110,49 @@ nav ul li a {
 .next {
   right: 10px;
   bottom: 50px;
+}
+
+/* Responsif */
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 50%;
+    margin: 20px;
+    margin-right: 25px;
+  }
+  
+  .logo-text {
+    font-size: 40px;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  h1, h2 {
+    margin: 20px;
+    padding: 5px;
+  }
+  
+  p {
+    margin: -20px;
+    padding: -5px;
+  }
+  
+  header {
+    margin: 20px;
+    padding: 5px;
+  }
+  
+  nav ul li {
+    margin-right: 5px;
+  }
+  
+  .slide-caption {
+    bottom: 30px;
+    left: 30px;
+  }
 }
 
 /* Responsive Styles for Phone */
@@ -145,6 +193,19 @@ nav ul li a {
     bottom: 20px;
     left: 20px;
   }
+  
+  .prev,
+  .next {
+    font-size: 18px;
+    padding: 5px;
+    bottom: 20px;
+  }
+  
+  .prev {
+    left: 5px;
+  }
+  
+  .next {
+    right: 5px;
+  }
 }
-
-
