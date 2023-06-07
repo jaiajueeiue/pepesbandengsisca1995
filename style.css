@@ -90,6 +90,8 @@ nav ul li a {
   color: #ffffff;
 }
 
+/* ... previous CSS code ... */
+
 /* Gaya tombol navigasi */
 .prev,
 .next {
@@ -100,29 +102,30 @@ nav ul li a {
   text-decoration: none;
   font-size: 24px;
   cursor: pointer;
+  bottom: 50px;
 }
 
 .prev {
   left: 10px;
-  bottom: 50px;
 }
 
 .next {
   right: 10px;
-  bottom: 50px;
 }
 
 /* Responsif */
 @media screen and (max-width: 600px) {
-  .logo {
-    width: 50%;
-    margin: 20px;
-    margin-right: 25px;
+  /* ... previous responsive styles ... */
+
+  /* Adjust tombol navigasi untuk ponsel */
+  .prev,
+  .next {
+    font-size: 18px;
+    padding: 5px;
+    bottom: 20px;
   }
-  
-  .logo-text {
-    font-size: 40px;
-  }
+}
+
   
   .container {
     max-width: 100%;
